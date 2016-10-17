@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-    <title>Starter Template - Materialize</title>
+    <title>Online Checkout</title>
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -28,9 +28,9 @@
     </nav>
 
     <div class="container">
-      <h4>Menu</h4>
         <div class="row">
             <div class="col s12 m6">
+                <h4>Menu</h4>
                 <div class="row">
                     <div class="col s12 m6">
                         <div class="card">
@@ -52,16 +52,16 @@
                                 <img src="img/pizza.jpg">
                             </div>
                             <div class="card-content">
-                                <p>Arugula pie                 </p>
+                                <p>Arugula pie </p>
                                 <p>$11.99</p>
                             </div>
                             <div class="card-action">
                                 <a href="#" class="pink-text text-lighten-1">Add to Order</a>
                             </div>
                         </div>
-                      </div>
                     </div>
-                    <div class="row">
+                </div>
+                <div class="row">
                     <div class="col s12 m6">
                         <div class="card">
                             <div class="card-image">
@@ -91,6 +91,73 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="col s12 m6">
+                <h4>Order</h4>
+                <table class="striped">
+                    <thead>
+                        <tr>
+                            <th data-field="id">Item</th>
+                            <th data-field="price" class="right-align">Price</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Royale with Cheese</td>
+                            <td class="right-align">$8.99</td>
+                        </tr>
+                        <tr>
+                            <td>Arugula Pie</td>
+                            <td class="right-align">$11.99</td>
+                        </tr>
+                        <tr>
+                            <td>Ice Cream Biscut</td>
+                            <td class="right-align">$7.99</td>
+                        </tr>
+                        <tr>
+                            <td>Smoked Swine</td>
+                            <td class="right-align">$14.99</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="right-align">Subtotal</td>
+                            <td class="right-align">$43.96</td>
+                        </tr>
+                        <tr>
+                            <td class="right-align">Tax</td>
+                            <td class="right-align">$3.08</td>
+                        </tr>
+                        <tr>
+                            <td class="right-align">Total</td>
+                            <td class="right-align">$47.04</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <form class="col s12">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix pink-text">account_circle</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">First Name</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix pink-text">phone</i>
+                        <input id="icon_telephone" type="tel" class="validate">
+                        <label for="icon_telephone">Phone Number</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix pink-text">home</i>
+                        <input id="icon_home" type="text" class="validate">
+                        <label for="icon_home">Address</label>
+                    </div>
+                </form>
+                <div class="row center">
+                <button class="btn waves-effect waves-light pink" type="submit" name="action">Place Order<i class="material-icons right">send</i>
+                </button>
+              </div>
             </div>
         </div>
     </div>
