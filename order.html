@@ -41,7 +41,7 @@
                                 <p>Royale with Cheese</p>
                                 <p>$8.99</p>
                             </div>
-                            <div class="card-action">
+                            <div id="burger" class="card-action">
                                 <a href="#" class="pink-text text-lighten-1">Add to Order</a>
                             </div>
                         </div>
@@ -55,7 +55,7 @@
                                 <p>Arugula pie </p>
                                 <p>$11.99</p>
                             </div>
-                            <div class="card-action">
+                            <div id="pie" class="card-action">
                                 <a href="#" class="pink-text text-lighten-1">Add to Order</a>
                             </div>
                         </div>
@@ -71,7 +71,7 @@
                                     <p>$14.99</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#" class="pink-text text-lighten-1">Add to Order</a>
+                                    <a id="swine" href="#" class="pink-text text-lighten-1">Add to Order</a>
                                 </div>
                             </div>
                         </div>
@@ -82,10 +82,10 @@
                                 <img src="img/ice_cream.jpg">
                             </div>
                             <div class="card-content">
-                                <p>Ice Cream Biscut</p>
+                                <p>Ice Cream Biscuit</p>
                                 <p>$7.99</p>
                             </div>
-                            <div class="card-action">
+                            <div id="iceCream" class="card-action">
                                 <a href="#" class="pink-text text-lighten-1">Add to Order</a>
                             </div>
                         </div>
@@ -102,38 +102,23 @@
                         </tr>
                     </thead>
 
-                    <tbody>
-                        <tr>
-                            <td>Royale with Cheese</td>
-                            <td class="right-align">$8.99</td>
-                        </tr>
-                        <tr>
-                            <td>Arugula Pie</td>
-                            <td class="right-align">$11.99</td>
-                        </tr>
-                        <tr>
-                            <td>Ice Cream Biscut</td>
-                            <td class="right-align">$7.99</td>
-                        </tr>
-                        <tr>
-                            <td>Smoked Swine</td>
-                            <td class="right-align">$14.99</td>
-                        </tr>
+                    <tbody id = "table">
+
                     </tbody>
                 </table>
                 <table>
-                    <tbody>
+                    <tbody id = "table2">
                         <tr>
                             <td class="right-align">Subtotal</td>
-                            <td class="right-align">$43.96</td>
+                            <td id="sub" class="right-align"></td>
                         </tr>
                         <tr>
                             <td class="right-align">Tax</td>
-                            <td class="right-align">$3.08</td>
+                            <td id="tax" class="right-align"></td>
                         </tr>
                         <tr>
                             <td class="right-align">Total</td>
-                            <td class="right-align">$47.04</td>
+                            <td id="total" class="right-align"></td>
                         </tr>
                     </tbody>
                 </table>
@@ -155,8 +140,8 @@
                     </div>
                 </form>
                 <div class="row center">
-                <button class="btn waves-effect waves-light pink" type="submit" name="action">Place Order<i class="material-icons right">send</i>
-                </button>
+                  <button id="checkout" class="btn waves-effect waves-light pink" type="submit" name="action">Place Order<i class="material-icons right">send</i>
+                  </button>
               </div>
             </div>
         </div>
